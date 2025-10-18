@@ -1,0 +1,28 @@
+* { font-family: HelveticaNeue-UltraLight, Helvetica, sans-serif; background: transparent; border: none; margin: 0; padding: 0; line-height: 1; text-align: center; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+*:focus { outline: none; }
+html { position: relative; width: 100%; height: 100%; }
+body { position: relative; width: 100%; height: 100%; max-width: 640px; margin: 0 auto; color: #000000; background: #ffffff; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100%; overflow: hidden; }
+button { cursor: pointer; }
+button span { position: absolute; width: 1em; height: 1em; left: 50%; top: 50%; margin: -0.5em; }
+
+#time, #spnr { position: absolute; width: 100%; height: 1em; top: 25%; margin: -0.5em 0; }
+body.active #spnr { display: none; }
+#stop { position: absolute; width: 100%; height: 100%; display: none; }
+body.active #stop { display: block; }
+
+#ctrl button { font-size: 25%; color: #ffffff; position: absolute; width: 95%; height: 23.75%; margin: 0 -47.5%; border-radius: 0.25em; }
+body.active #ctrl button { background: #e0e0e0 !important; }
+#t-up { background: #008000; left: 50%; top: 50%; }
+#t-dn { background: #800000; left: 50%; top: 75%; }
+#t-up:active, #t-up.active { background: #40ff40; }
+#t-dn:active, #t-dn.active { background: #ff4040; }
+
+#spnr button { font-size: 12.5%; color: #e0e0e0; position: absolute; width: 2em; height: 2em; margin: -1em; padding: 0.5em; }
+#spnr button:active, #spnr button.active { color: #c0c0c0 !important; }
+#h-up { left: 15%; top: 0; }
+#h-dn { left: 15%; bottom: 0; }
+#m-up { left: 50%; top: 0; }
+#m-dn { left: 50%; bottom: 0; }
+#s-up { left: 85%; top: 0; }
+#s-dn { left: 85%; bottom: 0; }
+
